@@ -9,4 +9,4 @@ let avgScore = Math.floor((introScore + gitScore + jsScore)/3);
 let studentName = "Eren";
 let studentSurname = "Yeager";
 
-console.log(`${studentName} ${studentSurname}\`s average score for the Intro, Git and JS modules is ${avgScore}.`);
+console.log(`${studentName.slice(0,1)}. ${studentSurname}\`s average score for the Intro, Git and JS modules is ${avgScore}.`);
