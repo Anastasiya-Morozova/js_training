@@ -44,11 +44,12 @@ const testData7 = [
 
 //Test dataset "testData8" where the "scorePoints" parameters are invalid values
 const testData8 = [
-    { id: 1, name: "Henry", scorePoints: "text"},
-    { id: 2, name: "Isabel", scorePoints: null },
-    { id: 3, name: "Rem", scorePoints: undefined },
-  ];
+  { id: 1, name: "Henry", scorePoints: "text" },
+  { id: 2, name: "Isabel", scorePoints: null },
+  { id: 3, name: "Rem", scorePoints: undefined },
+];
 
+//Let's count the max score
 function countMaxScorePoints(array) {
   let scorePoints = [];
 
@@ -58,7 +59,10 @@ function countMaxScorePoints(array) {
   }
 
   for (let eachStudentPoints of array) {
-    if (eachStudentPoints.hasOwnProperty("scorePoints") && eachStudentPoints.scorePoints !== null && eachStudentPoints.scorePoints >= 0
+    if (
+      eachStudentPoints.hasOwnProperty("scorePoints") &&
+      eachStudentPoints.scorePoints !== null &&
+      eachStudentPoints.scorePoints >= 0
     ) {
       scorePoints.push(eachStudentPoints.scorePoints);
     }
@@ -67,10 +71,21 @@ function countMaxScorePoints(array) {
     console.log("Invalid values");
   } else {
     let maxScorePoints = Math.max(...scorePoints);
-    console.log("Max score is: " + maxScorePoints);
+    let playerName = playerNameByScore(array, maxScorePoints);
+    console.log(`Player ${playerName} has the max score:  ${maxScorePoints}`);
     return maxScorePoints;
   }
 }
+
+//Let's find the player name by the max score we define in the "countMaxScorePoints"
+function playerNameByScore(array, score) {
+  for (let eachStudentPoints of array) {
+    if (eachStudentPoints.scorePoints == score) {
+      return eachStudentPoints.name;
+    }
+  }
+}
+
 
 countMaxScorePoints(testData1);
 countMaxScorePoints(testData2);
