@@ -1,0 +1,27 @@
+{
+  "name": "js_training",
+  "version": "1.0.0",
+  "description": "different tasks on js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasiya-Morozova/js_training.git"
+  },
+  "keywords": [
+    "js",
+    "qa",
+    "testing"
+  ],
+  "author": "Anastasiia Morozova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anastasiya-Morozova/js_training/issues"
+  },
+  "homepage": "https://github.com/Anastasiya-Morozova/js_training#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
