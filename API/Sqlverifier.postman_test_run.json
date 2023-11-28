@@ -1,0 +1,926 @@
+{
+	"id": "b78e558a-ec57-4877-91ae-3bbcd6bb799c",
+	"name": "Sqlverifier",
+	"timestamp": "2023-11-28T13:51:20.207Z",
+	"collection_id": "24975588-610ce2d2-2214-4f60-8b21-04ae11604a26",
+	"folder_id": 0,
+	"environment_id": "24975588-6084e218-becf-45aa-a95b-da1acbf9c3ce",
+	"totalPass": 56,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-11-28T13:51:17.489Z",
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "b888478f-262e-4b59-aae8-b49495451a81",
+			"name": "Login by admin",
+			"url": "http://localhost:8080/api/authenticate",
+			"time": 68,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				68
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "ef087582-7b05-4e6f-a67d-c5116bbfc4e4",
+			"name": "User registration Admin",
+			"url": "http://localhost:8080/api/register",
+			"time": 157,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time is less than 200ms": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				157
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time is less than 200ms": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "2d0d0ef5-9862-41bc-ae8e-ba169da0f6f5",
+			"name": "Get user[Admin] ID",
+			"url": "http://localhost:8080/api/admin/users/qwerty1",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "3e1e8e27-fe54-4968-ba8f-8dac2308e213",
+			"name": "Activate user account with admin role",
+			"url": "http://localhost:8080/api/admin/users",
+			"time": 40,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "7284acb9-85fb-4247-bb04-9a11354d5e69",
+			"name": "Authenticate user[admin]",
+			"url": "http://localhost:8080/api/authenticate",
+			"time": 66,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				66
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "e5ccb658-ee29-4cf4-85c4-5e23117b19bc",
+			"name": "User registration Teacher",
+			"url": "http://localhost:8080/api/register",
+			"time": 72,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time is less than 200ms": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				72
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time is less than 200ms": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "79b699b5-24bd-4e8d-acf8-73b925056630",
+			"name": "Get user[teacher] ID",
+			"url": "http://localhost:8080/api/admin/users/qwerty3",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "e73eb183-2969-4bc7-b7eb-e36128d2c0fb",
+			"name": "Activate user account with teacher role",
+			"url": "http://localhost:8080/api/admin/users",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "38c04717-64cf-46b2-9f55-cd8b5ccdec4a",
+			"name": "Authenticate user[teacher]",
+			"url": "http://localhost:8080/api/authenticate",
+			"time": 68,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				68
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "a63159aa-b599-44cf-89a2-30b6e8e39c0f",
+			"name": "User registration Student",
+			"url": "http://localhost:8080/api/register",
+			"time": 77,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time is less than 200ms": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				77
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time is less than 200ms": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "bcc4b39a-4a62-4ec1-b41c-ab49e95751b4",
+			"name": "Get user[student] ID",
+			"url": "http://localhost:8080/api/admin/users/qwerty2",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "9934f9b4-f35e-443b-b00b-5b5c3aac0708",
+			"name": "Activate user account with student role",
+			"url": "http://localhost:8080/api/admin/users",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "f6e537b5-a51a-4c87-83a6-ceefca112d26",
+			"name": "Authenticate user[student]",
+			"url": "http://localhost:8080/api/authenticate",
+			"time": 67,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "06775c8b-6642-4990-85c6-043ef60dbc3f",
+			"name": "Authenticate user[admin]",
+			"url": "http://localhost:8080/api/authenticate",
+			"time": 65,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				65
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "b85477ae-764d-4503-b7f1-2f94f801c695",
+			"name": "Admin creates a new task with invalid data",
+			"url": "http://localhost:8080/api/tasks",
+			"time": 8,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Failed": false,
+				"Status code name has string": false,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Failed": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code name has string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Failed": false,
+					"Status code name has string": false,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "34b0a951-e596-4ba0-8034-66964ffb2a35",
+			"name": "Admin creates a new task",
+			"url": "http://localhost:8080/api/tasks",
+			"time": 9,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Successful POST request": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Successful POST request": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "809ae381-f05a-4483-abe2-fc2e6938280d",
+			"name": "Admin gets the task list",
+			"url": "http://localhost:8080/api/tasks?size=10&page=0",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "9b4b5547-7a71-4775-a75f-8c2b01307ae2",
+			"name": "Admin changes the task with PATCH",
+			"url": "http://localhost:8080/api/tasks/1207",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Successful PATCH request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PATCH request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Successful PATCH request": true
+				}
+			]
+		},
+		{
+			"id": "e224350c-586b-4654-a505-53581bbcf8d3",
+			"name": "Admin changes the task with PUT",
+			"url": "http://localhost:8080/api/tasks/1207",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful PUT request": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Successful PUT request": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "61ef09f0-f64e-41f0-8187-77bc4e8aa245",
+			"name": "Admin changes the task with PUT (empty body-expect error)",
+			"url": "http://localhost:8080/api/tasks/1207",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "7c76d16f-514a-4d65-90fd-45360ed5d028",
+			"name": "Admin deletes the task",
+			"url": "http://localhost:8080/api/tasks/1207",
+			"time": 9,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "d181f9f6-792c-4615-9819-79b8ad575077",
+			"name": "Admin deletes the task with non-existing id",
+			"url": "http://localhost:8080/api/tasks/101",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 811,
+	"collection": {
+		"requests": [
+			{
+				"id": "b888478f-262e-4b59-aae8-b49495451a81",
+				"method": "POST"
+			},
+			{
+				"id": "ef087582-7b05-4e6f-a67d-c5116bbfc4e4",
+				"method": "POST"
+			},
+			{
+				"id": "2d0d0ef5-9862-41bc-ae8e-ba169da0f6f5",
+				"method": "GET"
+			},
+			{
+				"id": "3e1e8e27-fe54-4968-ba8f-8dac2308e213",
+				"method": "PUT"
+			},
+			{
+				"id": "7284acb9-85fb-4247-bb04-9a11354d5e69",
+				"method": "POST"
+			},
+			{
+				"id": "e5ccb658-ee29-4cf4-85c4-5e23117b19bc",
+				"method": "POST"
+			},
+			{
+				"id": "79b699b5-24bd-4e8d-acf8-73b925056630",
+				"method": "GET"
+			},
+			{
+				"id": "e73eb183-2969-4bc7-b7eb-e36128d2c0fb",
+				"method": "PUT"
+			},
+			{
+				"id": "38c04717-64cf-46b2-9f55-cd8b5ccdec4a",
+				"method": "POST"
+			},
+			{
+				"id": "a63159aa-b599-44cf-89a2-30b6e8e39c0f",
+				"method": "POST"
+			},
+			{
+				"id": "bcc4b39a-4a62-4ec1-b41c-ab49e95751b4",
+				"method": "GET"
+			},
+			{
+				"id": "9934f9b4-f35e-443b-b00b-5b5c3aac0708",
+				"method": "PUT"
+			},
+			{
+				"id": "f6e537b5-a51a-4c87-83a6-ceefca112d26",
+				"method": "POST"
+			},
+			{
+				"id": "06775c8b-6642-4990-85c6-043ef60dbc3f",
+				"method": "POST"
+			},
+			{
+				"id": "b85477ae-764d-4503-b7f1-2f94f801c695",
+				"method": "POST"
+			},
+			{
+				"id": "34b0a951-e596-4ba0-8034-66964ffb2a35",
+				"method": "POST"
+			},
+			{
+				"id": "809ae381-f05a-4483-abe2-fc2e6938280d",
+				"method": "GET"
+			},
+			{
+				"id": "9b4b5547-7a71-4775-a75f-8c2b01307ae2",
+				"method": "PATCH"
+			},
+			{
+				"id": "e224350c-586b-4654-a505-53581bbcf8d3",
+				"method": "PUT"
+			},
+			{
+				"id": "61ef09f0-f64e-41f0-8187-77bc4e8aa245",
+				"method": "PATCH"
+			},
+			{
+				"id": "7c76d16f-514a-4d65-90fd-45360ed5d028",
+				"method": "DELETE"
+			},
+			{
+				"id": "d181f9f6-792c-4615-9819-79b8ad575077",
+				"method": "PUT"
+			}
+		]
+	}
+}
